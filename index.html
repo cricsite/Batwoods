@@ -3,19 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BatWood Cricket</title>
+<title>Daniel VIP</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+
 body{
     min-height:100vh;
     background:#f2f4f7;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:flex-start;
+    padding-top:40px; /* 🔥 CARD KO UPER LAYA */
     color:#111;
 }
+
 .card{
     width:92%;
     max-width:380px;
@@ -24,12 +27,12 @@ body{
     box-shadow:0 20px 50px rgba(0,0,0,0.15);
     padding:26px 22px;
     text-align:center;
-    position:relative;
 }
+
 .logo{
-    text-align:center;
     margin-bottom:16px;
 }
+
 .logo img{
     width:139px;
     height:139px;
@@ -37,31 +40,37 @@ body{
     object-fit:cover;
     display:block;
     margin:0 auto;
-    background:#ddd; /* placeholder color while loading */
+    background:#ddd;
 }
+
 .title{
     font-size:28px;
     font-weight:800;
     letter-spacing:1px;
     margin-bottom:6px;
 }
+
 .sub{
     font-size:14px;
     color:#555;
     margin-bottom:20px;
 }
+
 .features{
     text-align:left;
     font-size:14px;
     margin-bottom:22px;
 }
+
 .features div{
     margin-bottom:10px;
 }
+
 .features div::before{
     content:"• ";
     font-weight:bold;
 }
+
 .cta{
     display:block;
     background:#0b5cff;
@@ -71,24 +80,32 @@ body{
     border-radius:12px;
     font-size:17px;
     font-weight:700;
-    transition:all 0.2s ease;
+    transition:0.2s;
 }
+
 .cta:hover{
     transform:scale(1.03);
     background:#0056b3;
 }
+
 .note{
     font-size:11px;
     color:#777;
     margin-top:14px;
 }
-@media(max-width:400px){
+
+/* 📱 Mobile fine-tune */
+@media(max-width:600px){
+    body{
+        padding-top:25px;
+    }
     .logo img{
         width:115px;
         height:115px;
     }
-    .title{font-size:24px;}
-    .cta{font-size:16px;}
+    .title{
+        font-size:24px;
+    }
 }
 </style>
 </head>
@@ -110,17 +127,20 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1506614334496842&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    
 <body>
+
 <div class="card">
-    <!-- FAST IMAGE WITH LAZY LOAD -->
+
+    <!-- LOGO -->
     <div class="logo">
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='139' height='139'%3E%3Crect width='139' height='139' fill='%23ddd'/%3E%3C/svg%3E"
-             data-src="https://img1.wsimg.com/isteam/ip/3af1cfa0-0092-47ed-aa80-6cc69e10cf7f/48338.jpg"
-             alt="BatWood Logo" class="lazy">
+        <img 
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='139' height='139'%3E%3Crect width='139' height='139' fill='%23ddd'/%3E%3C/svg%3E"
+          data-src="https://img1.wsimg.com/isteam/ip/3af1cfa0-0092-47ed-aa80-6cc69e10cf7f/ols/48652.jpg"
+          alt="Daniel VIP Logo"
+          class="lazy">
     </div>
 
-    <div class="title">BatWood</div>
+    <div class="title">DANIEL VIP</div>
     <div class="sub">Live Cricket Session & Match Intelligence</div>
 
     <div class="features">
@@ -130,20 +150,22 @@ src="https://www.facebook.com/tr?id=1506614334496842&ev=PageView&noscript=1"
         <div>Clean & reliable information</div>
     </div>
 
-    <a href="https://telegram.me/+zdZ6SZW5eCkwM2E1" class="cta">
-        Join Telegram Channel
+    <a href="https://telegram.me/+w7heONxSYGE3NmQ1" class="cta">
+        JOIN NOW TELEGRAM
     </a>
 
-    <div class="note">Cricket is unpredictable • Educational purpose only</div>
+    <div class="note">
+        Cricket is unpredictable • Educational purpose only
+    </div>
+
 </div>
 
 <script>
-// Lazy-load the main image for ultra-fast initial load
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const img = document.querySelector(".lazy");
-    const newImg = new Image();
-    newImg.src = img.dataset.src;
-    newImg.onload = () => img.src = newImg.src;
+    const tempImg = new Image();
+    tempImg.src = img.dataset.src;
+    tempImg.onload = () => img.src = tempImg.src;
 });
 </script>
 
